@@ -44,9 +44,15 @@ footer {
 	margin-bottom: 0px;
 }
 
+.navigationlogo {
+	margin: 8px 0px 8px 0px;
+	height: 24px;
+}
+
 .belowlogoline {
 	position: absolute;
 	margin-left: -20px;
+	height: 7px;
 }
 
 #banner{border-bottom:none}
