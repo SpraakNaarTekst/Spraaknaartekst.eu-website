@@ -14,7 +14,8 @@ layout: nl
 					{% endfor %}
 	            </div>
 	            <div class="col-lg-6 pull-left">
-	              {{content}}
+	            	<h3>{{ page.date | date_to_string }} &raquo; {{ page.title }}</h3>
+	              	{{content}}
 	            </div>
 	          </div>
           </div>
