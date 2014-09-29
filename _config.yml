@@ -2,3 +2,6 @@ baseurl: "http://spraaknaartekst.eu"
 gems:
   - jekyll-sitemap
 excerpt_separator: "<excerptseparator></excerptseparator>"
+blogname: Spraak naar Tekst blog
+blogdescription: Een blog rondom alle ontwikkelingen van Spraak naar Tekst en Preekondertiteling
+blogurl: http://spraaknaartekst.eu/blog
