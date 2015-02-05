@@ -63,7 +63,6 @@
     <!-- Navbar -->
     <nav>
       <div class="navbar navbar-inverse navbar-fixed-top">
-        <!--
         <div class="standout">
           <div class="container">
             <div class="row ">
@@ -72,44 +71,15 @@
                   <a href='tel:+31 (0)85 4016325'>Bel ons: +31 (0)85 4016325</a>
                 </span>
                 <span class="pull-right">
-                  {% if site.translations[page.translationGroup] and site.translations[page.translationGroup].size > 0 %}
-                    {% for lang in site.translations[page.translationGroup] %}
-                      {% assign langId = lang[0] %}
-                      {% assign linkId = lang[1] %}
-                      {% capture translateUrl %}{% for node in site.pages %}{% if node.id == linkId %}{{node.url}}{% endif %}{% endfor %}{% endcapture %}
-                      {% if translateUrl %}
-                        {% if langId == page.lang %}
-                          <a href="{{site.baseurl}}{{translateUrl}}" class="flag active"><img src='/static/img/flags/{{site.flags[langId]}}'/></a>
-                        {% else %}
-                          <a href="{{site.baseurl}}{{translateUrl}}" class="flag"><img src='/static/img/flags/{{site.flags[langId]}}'/></a>
-                        {% endif %}
-                      {% endif %}
-                    {% endfor %}
-                    &nbsp; &nbsp; &nbsp;
-                  {% endif %}
-                  
-                  {% assign sorted_pages = site.pages | sort: "navigationGroupRank" %}
-                	{% for node in sorted_pages %}
-        						{% capture nodeURLStart %}{{node.url | truncate:7}}{% endcapture %}
-        						{% if nodeURLStart == "/" or nodeURLStart == "/nl/..." %}
-        							{% if node.navigationGroup == "top" %}
-        								{% if page.id == node.id or page.additionalNavigationHighlight == node.id %}
-        									<a href="{{node.url}}" class="active">{{node.title}}</a>&nbsp; &nbsp; &nbsp;
-        								{% else %}
-        									<a href="{{node.url}}">{{node.title}}</a>&nbsp; &nbsp; &nbsp;
-        								{% endif %}
-        							{% endif %}
-        						{% endif %}
-        					{% endfor %}
                   <a href="https://www.facebook.com/spraaknaartekst" target="_blank"><span class="fa fa-facebook"></span></a>&nbsp; &nbsp; &nbsp;
-                  <a href="https://twitter.com/spraaknaartekst/" target="_blank"><span class="fa fa-twitter"></span></a>&nbsp; &nbsp; &nbsp;
-                  <a href="https://plus.google.com/+spraaknaarteksteu?rel=author" target="_blank"><span class="fa fa-google-plus"></span></a>&nbsp; &nbsp; &nbsp;
-                  <a href="https://www.linkedin.com/company/spraaknaartekst" target="_blank"><span class="fa fa-linkedin"></span></a>&nbsp; &nbsp; &nbsp;
+                  <a href="https://twitter.com/impeeNL/" target="_blank"><span class="fa fa-twitter"></span></a>&nbsp; &nbsp; &nbsp;
+                  <a href="https://plus.google.com/117426316552058985657" target="_blank"><span class="fa fa-google-plus"></span></a>&nbsp; &nbsp; &nbsp;
+                  <a href="https://www.linkedin.com/company/3672509" target="_blank"><span class="fa fa-linkedin"></span></a>&nbsp; &nbsp; &nbsp;
                 </span>
               </div>
             </div>
           </div>
-        </div>-->
+        </div>
         <div class="container">
           <div class="navbar-header">
             <a href="{{site.baseurl}}/nl" class="navbar-brand"><img src='/static/img/logo.png' alt='spraak naar tekst logo' class='navigationlogo'/></a>
