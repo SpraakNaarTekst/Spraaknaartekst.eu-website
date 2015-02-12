@@ -25,6 +25,7 @@ footer {
 
 .navbar a.active {
 	text-decoration: underline;
+    background: #fff; 
 }
 .navbar .nav li a {
 	color: #158cba;
@@ -35,6 +36,10 @@ footer {
 }
 .navbar .flag.active {
     border-bottom: 2px solid #ddd;
+}
+.navbar a.tab {
+    padding: 11px;
+    margin-bottom: 0px;
 }
 
 .callus {
