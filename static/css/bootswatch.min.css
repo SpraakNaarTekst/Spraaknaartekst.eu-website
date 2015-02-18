@@ -8,6 +8,7 @@ html {
 body{
 	padding-top: 100px;
 	margin-bottom: 6em;
+    scroll: auto;
 }
 
 footer {
