@@ -8,7 +8,7 @@ html {
 body{
 	padding-top: 100px;
 	margin-bottom: 6em;
-    soverflow-y: scroll;
+    overflow-y: scroll;
 }
 
 footer {
