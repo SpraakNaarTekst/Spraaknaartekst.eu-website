@@ -8,6 +8,11 @@ Extract naar permanente locatie
 ruby dk.rb init
 ruby dk.rb install
 
+evt gem certificaat fixen, zie https://gist.github.com/luislavena/f064211759ee0f806c88
+
+gem install bundler
+gem install github-pages
+
 Install Github Pages GEM
 https://github.com/github/pages-gem
 
