@@ -39,7 +39,43 @@ ogUrl: null
                 </p>
 	            </div>
 	            <div class="col-lg-6 pull-left">
-	              <iframe src="https://docs.google.com/forms/d/1BrY4I6i5Jt7WfmVmjJ8xzxyv0PQyLOWlImXOj-6uLaU/viewform?embedded=true" style="width: 100%; height: 780px;" frameborder="0" marginheight="0" marginwidth="0">Bezig met laden...</iframe>
+					<form action="https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+
+						<input type=hidden name="oid" value="00D24000000ZoyX">
+						<input type=hidden name="retURL" value="http://spraaknaartekst.eu">
+						<input id="00N2400000ATxKX" maxlength="20" name="00N2400000ATxKX" size="20" type="hidden" value="spraaknaartekst.eu" />
+						<table>
+						<tr>
+						<td>
+						<label for="first_name">Voornaam*</label></td><td><input required="true"  id="first_name" maxlength="40" name="first_name" size="20" type="text" /></td>
+						</tr>
+						<tr>
+						<td>
+						<label for="last_name">Achternaam*</label></td><td><input required="true" id="last_name" maxlength="80" name="last_name" size="20" type="text" /></td>
+						</tr>
+						<tr>
+						<td>
+						<label for="email">Email*</label></td><td><input required="true" id="email" maxlength="80" name="email" size="20" type="email" /></td>
+						</tr>
+						<tr>
+						<td>
+						<label for="phone">Telefoon</label></td><td><input  id="phone" maxlength="40" name="phone" size="20" type="text" /></td>
+						</tr>
+						<tr>
+						<td>
+
+						<label for="company">Kerkelijke gemeente</label></td><td><input  id="company" maxlength="40" name="company" size="20" type="text" /></td>
+						</tr>
+						<tr>
+						<td>
+
+						<label for="description">Uw bericht*</label></td><td><textarea required="true" rows="10" cols="50" name="description"></textarea></td>
+						</tr>
+						</table>
+						
+						<input type="submit" name="submit" value="Verstuur!">
+
+					</form>	              
 	            </div>
 	          </div>
           </div>
