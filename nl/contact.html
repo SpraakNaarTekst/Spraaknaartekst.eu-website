@@ -39,43 +39,39 @@ ogUrl: null
                 </p>
 	            </div>
 	            <div class="col-lg-6 pull-left">
-					<form action="https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+			<form action="https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
 
-						<input type=hidden name="oid" value="00D24000000ZoyX">
-						<input type=hidden name="retURL" value="http://spraaknaartekst.eu">
-						<input id="00N2400000ATxKX" maxlength="20" name="00N2400000ATxKX" size="20" type="hidden" value="spraaknaartekst.eu" />
-						<table>
-						<tr>
-						<td>
-						<label for="first_name">Voornaam*</label></td><td><input required="true"  id="first_name" maxlength="40" name="first_name" size="20" type="text" /></td>
-						</tr>
-						<tr>
-						<td>
-						<label for="last_name">Achternaam*</label></td><td><input required="true" id="last_name" maxlength="80" name="last_name" size="20" type="text" /></td>
-						</tr>
-						<tr>
-						<td>
-						<label for="email">Email*</label></td><td><input required="true" id="email" maxlength="80" name="email" size="20" type="email" /></td>
-						</tr>
-						<tr>
-						<td>
-						<label for="phone">Telefoon</label></td><td><input  id="phone" maxlength="40" name="phone" size="20" type="text" /></td>
-						</tr>
-						<tr>
-						<td>
-
-						<label for="company">Kerkelijke gemeente</label></td><td><input  id="company" maxlength="40" name="company" size="20" type="text" /></td>
-						</tr>
-						<tr>
-						<td>
-
-						<label for="description">Uw bericht*</label></td><td><textarea required="true" rows="10" cols="50" name="description"></textarea></td>
-						</tr>
-						</table>
+				<input type=hidden name="oid" value="00D24000000ZoyX">
+				<input type=hidden name="retURL" value="http://spraaknaartekst.eu">
+				<input id="00N2400000ATxKX" maxlength="20" name="00N2400000ATxKX" size="20" type="hidden" value="spraaknaartekst.eu" />
 						
-						<input type="submit" name="submit" value="Verstuur!">
+				<div class="form-group">
+                            		<label for="first_name">Voornaam*</label>
+                            		<input type="text" required="true" id="first_name" maxlength="40" name="first_name" class="form-control" placeholder="Voornaam" />
+                        	</div>
+                        	<div class="form-group">
+                            		<label for="last_name">Achternaam*</label>
+                            		<input type="text" required="true" id="last_name" maxlength="80" name="last_name" class="form-control" placeholder="Achternaam" />
+                        	</div>
+                        	<div class="form-group">
+                            		<label for="email">Email*</label>
+                            		<input type="email" required="true" id="email" maxlength="80" name="email" class="form-control" placeholder="naam@voorbeeld.nl" />
+                        	</div>
+                        	<div class="form-group">
+                            		<label for="phone">Telefoon</label>
+                            		<input type="text" required="false" id="phone" maxlength="40" name="phone" class="form-control" placeholder="06 12367890" />
+                        	</div>
+                        	<div class="form-group">
+                            		<label for="company">Kerkelijke gemeente</label>
+                            		<input type="text" required="false" id="company" maxlength="40" name="company" class="form-control" placeholder="" />
+                        	</div>
+				<div class="form-group">
+                            		<label for="description">Uw bericht*</label>
+                            		<textarea required="true" id="description" rows="10" name="description" class="form-control" placeholder="Bericht..."></textarea>
+                        	</div>
+				<input type="submit" name="submit" value="Verstuur!" class="btn btn-primary" />
 
-					</form>	              
+			</form>	              
 	            </div>
 	          </div>
           </div>
